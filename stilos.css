@@ -1,0 +1,367 @@
+/* ==========================================
+   ESTILOS GENERALES Y CONFIGURACIÓN
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcf8f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+header {
+    background-color: #d32f2f; /* Rojo Mexicano */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: #ffb300; /* Amarillo Ámbar */
+}
+
+/* ==========================================
+   SECCIÓN HERO (BIENVENIDA) - INICIO
+   ========================================== */
+.hero-restaurante {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero-bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-menu {
+    background-color: #ff9800; /* Naranja Brillante */
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #e65100;
+}
+
+/* ==========================================
+   SECCIÓN FAVORITOS / ESPECIALIDADES - INICIO
+   ========================================== */
+.especialidades {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.especialidades h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    color: #d32f2f;
+}
+
+.contenedor-platos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta-plato {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    width: 300px;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-plato:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-plato img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta-plato h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.tarjeta-plato p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #388e3c; /* Verde éxito */
+    font-size: 18px;
+    display: block;
+}
+
+/* ==========================================
+   SECCIÓN NOSOTROS (HISTORIA / MISIÓN)
+   ========================================== */
+.acerca-de {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contenedor-nosotros {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenedor-nosotros h2 {
+    font-size: 32px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.contenedor-nosotros p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 8% 60px;
+    gap: 30px;
+}
+
+.tarjeta-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    width: 45%;
+    min-width: 300px;
+    border-top: 4px solid #ff9800;
+}
+
+.tarjeta-info h3 {
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   SECCIÓN MENÚ COMPLETO (GRID)
+   ========================================== */
+.menu-intro {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.menu-intro h2 {
+    font-size: 32px;
+    color: #d32f2f;
+}
+
+.contenedor-menu {
+    padding: 20px 8% 60px;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-menu {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-menu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.info-plato {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info-plato h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.info-plato p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.precio-plato {
+    font-weight: bold;
+    color: #388e3c;
+    font-size: 16px;
+}
+
+/* ==========================================
+   SECCIÓN DE CONTACTO Y FORMULARIO
+   ========================================== */
+.seccion-contacto {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.seccion-contacto h2 {
+    font-size: 32px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.subtitulo-contacto {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+}
+
+.info-contacto, .formulario-contacto {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    width: 48%;
+    min-width: 320px;
+}
+
+.info-contacto h3 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.info-contacto h3:first-child {
+    margin-top: 0;
+}
+
+.info-contacto p {
+    color: #555;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.grupo-campo input, .grupo-campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn-enviar {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background-color: #b71c1c;
+}
+
+/* ==========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    margin-top: 40px;
+}
