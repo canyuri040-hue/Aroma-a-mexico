@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Antojitos La Catrina</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado y Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <h1>Antojitos La Catrina</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section class="seccion-contacto">
+        <h2>Ponte en Contacto con Nosotros</h2>
+        <p class="subtitulo-contacto">¿Tienes alguna duda, evento especial o quieres hacer un encargo? Escríbenos.</p>
+
+        <div class="contenedor-contacto">
+            
+            <!-- Información de Atención -->
+            <div class="info-contacto">
+                <h3>Nuestra Ubicación</h3>
+                <p>📍 Barrio El Centro, Frente al Parque Principal, Honduras</p>
+
+                <h3>Horario de Atención</h3>
+                <p>🕒 Lunes a Sábado: 11:00 AM - 9:00 PM<br>🕒 Domingos: 11:00 AM - 7:00 PM</p>
+
+                <h3>Teléfono y Correo</h3>
+                <p>📞 +504 9999-9999<br>✉️ info@lacatrinarestaurante.com</p>
+            </div>
+
+            <!-- Formulario de Mensaje -->
+            <div class="formulario-contacto">
+                <form action="#">
+                    <div class="grupo-campo">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="mensaje">Tu Mensaje o Pedido:</label>
+                        <textarea id="mensaje" rows="5" placeholder="Escribe aquí lo que deseas consultar..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Antojitos La Catrina - Sabor Tradicional Mexicano. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
