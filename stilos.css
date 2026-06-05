@@ -365,3 +365,52 @@ footer {
     font-size: 14px;
     margin-top: 40px;
 }
+/* ==========================================
+   SECCIÓN SERVICIOS
+   ========================================== */
+.servicios-intro {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.servicios-intro h2 {
+    font-size: 32px;
+    color: #d32f2f;
+}
+
+.contenedor-servicios {
+    padding: 20px 8% 60px;
+}
+
+.grid-servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tarjeta-servicio {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 30%;
+    min-width: 280px;
+    border-bottom: 4px solid #d32f2f;
+}
+
+.icono-servicio {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-servicio h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tarjeta-servicio p {
+    color: #666;
+    font-size: 15px;
+}
